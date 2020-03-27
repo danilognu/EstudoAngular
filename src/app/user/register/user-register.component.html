@@ -1,0 +1,17 @@
+
+<form>
+  <div>
+    <label>Name</label>
+    <input type="text" name="name" [(ngModel)]="user.name" >
+  </div>
+
+  <div>
+    <label>Email</label>
+    <input type="email" name="name" [(ngModel)]="user.email" >
+  </div>
+  <button (click)="Save()" >
+    Save
+  </button>
+
+  {{user | json}}
+</form>

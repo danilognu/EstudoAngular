@@ -1,11 +1,16 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UserComponent } from './user.component';
+import { UserRegisterComponent } from './register/user-register.component';
 
 
 const routes: Routes = [
   {  path: '',
     component:UserComponent
+  },
+  {
+    path: 'add',
+    component:UserRegisterComponent
   }
 ];
 

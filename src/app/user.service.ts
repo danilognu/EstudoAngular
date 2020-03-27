@@ -17,4 +17,22 @@ export class UserService {
     return user;
   }
 
+  public listUser():User[]
+  {
+    return [
+      {
+        name: "Danilo",
+        email:"danilo.teste@teste.com.br"
+      },
+      {
+        name: "Leticia",
+        email:"leticia@teste.com.br"
+      },
+      {
+        name: "Rafael",
+        email:"rafael@teste.com.br"
+      }
+    ]
+  }
+
 }
